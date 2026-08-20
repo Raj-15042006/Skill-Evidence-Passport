@@ -1,0 +1,1 @@
+Developed a Python web application with FastAPI and Pytest. Configured automated CI/CD pipeline.

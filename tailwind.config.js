@@ -1,0 +1,70 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#00236f",
+          hover: "#1E40AF",
+          container: "#1e3a8a",
+          fixed: "#dce1ff",
+        },
+        "on-primary": "#ffffff",
+        "on-primary-container": "#90a8ff",
+        secondary: {
+          DEFAULT: "#006a63",
+          container: "#99efe5",
+        },
+        "on-secondary-container": "#006f67",
+        tertiary: {
+          DEFAULT: "#4a1d00",
+          container: "#6c2e00",
+        },
+        "on-tertiary-container": "#ff8e49",
+        background: "#F8FAFC",
+        "on-background": "#0b1c30",
+        surface: {
+          DEFAULT: "#FFFFFF",
+          alt: "#F1F5F9",
+          variant: "#d3e4fe",
+          dim: "#cbdbf5",
+          bright: "#f8f9ff",
+          container: "#e5eeff",
+          "container-low": "#eff4ff",
+          "container-high": "#dce9ff",
+          "container-highest": "#d3e4fe",
+        },
+        "on-surface": "#0b1c30",
+        "on-surface-variant": "#444651",
+        border: "#E2E8F0",
+        outline: "#757682",
+        "text-primary": "#0F172A",
+        "text-secondary": "#475569",
+        "text-muted": "#94A3B8",
+        "success-text": "#15803D",
+        "success-fill": "#DCFCE7",
+        "warning-text": "#B45309",
+        "warning-fill": "#FEF3C7",
+        "error-text": "#B91C1C",
+        "error-fill": "#FEE2E2",
+      },
+      fontFamily: {
+        headline: ["Plus Jakarta Sans", "sans-serif"],
+        body: ["Inter", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        md: "0.5rem",
+        lg: "0.75rem",
+        xl: "1rem",
+        "2xl": "1.5rem",
+        full: "9999px",
+      },
+    },
+  },
+  plugins: [],
+};

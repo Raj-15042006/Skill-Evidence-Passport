@@ -1,0 +1,139 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#00201d","primary-fixed-dim":"#b6c4ff","border":"#E2E8F0","error-fill":"#FEE2E2","tertiary":"#4a1d00","inverse-surface":"#213145","text-muted":"#94A3B8","tertiary-container":"#6c2e00","inverse-on-surface":"#eaf1ff","surface-dim":"#cbdbf5","secondary-fixed-dim":"#80d5cb","warning-fill":"#FEF3C7","on-tertiary-container":"#ff8e49","on-secondary":"#ffffff","surface-tint":"#4059aa","surface-alt":"#F1F5F9","text-secondary":"#475569","outline":"#757682","primary":"#00236f","secondary":"#006a63","error-container":"#ffdad6","on-primary":"#ffffff","on-tertiary-fixed":"#331200","on-primary-container":"#90a8ff","surface-container-highest":"#d3e4fe","outline-variant":"#c5c5d3","surface-container-lowest":"#ffffff","secondary-container":"#99efe5","on-primary-fixed":"#00164e","tertiary-fixed":"#ffdbca","warning-text":"#B45309","surface":"#FFFFFF","primary-hover":"#1E40AF","on-surface-variant":"#444651","success-text":"#15803D","background":"#F8FAFC","on-tertiary":"#ffffff","on-background":"#0b1c30","on-primary-fixed-variant":"#264191","primary-container":"#1e3a8a","on-surface":"#0b1c30","text-primary":"#0F172A","on-secondary-fixed-variant":"#00504a","error":"#ba1a1a","secondary-fixed":"#9cf2e8","error-text":"#B91C1C","surface-variant":"#d3e4fe","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","surface-container-high":"#dce9ff","inverse-primary":"#b6c4ff","surface-container":"#e5eeff","on-error":"#ffffff","success-fill":"#DCFCE7","on-error-container":"#93000a","on-secondary-container":"#006f67","primary-fixed":"#dce1ff","on-tertiary-fixed-variant":"#763300","tertiary-fixed-dim":"#ffb68e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"sm":"8px","3xl":"48px","base":"4px","md":"12px","margin":"32px","2xl":"32px","4xl":"64px","xs":"4px","gutter":"24px","lg":"16px","5xl":"96px","xl":"24px"},"fontFamily":{"label-caps":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xs":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xs":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-lg text-on-surface"><main class="min-h-screen flex items-center justify-center p-xl"><div class="flex flex-col w-full h-full justify-center items-center relative">
+<!-- Ambient Background -->
+<div class="absolute inset-0 overflow-hidden pointer-events-none flex justify-center items-center">
+<svg class="w-full h-full opacity-30 text-surface-tint" preserveaspectratio="none" viewbox="0 0 100 100">
+<defs>
+<lineargradient id="grad1" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="currentColor" stop-opacity="0.1"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#grad1)"></path>
+</svg>
+</div>
+<!-- Login Card -->
+<div class="relative bg-surface rounded-xl shadow-lg w-full max-w-md p-2xl flex flex-col gap-xl z-10">
+<!-- Header -->
+<div class="flex flex-col items-center text-center gap-sm">
+<!-- Institutional Logo Placeholder -->
+<div class="w-16 h-16 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary mb-md shadow-sm">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Welcome back</h1>
+<p class="font-body-lg text-body-lg text-text-secondary">Sign in to your Skills Evidence Passport.</p>
+</div>
+<!-- Form Elements -->
+<form class="flex flex-col gap-lg w-full" id="loginForm">
+<!-- Email Input -->
+<div class="flex flex-col gap-xs relative group">
+<label class="font-label-caps text-label-caps text-text-secondary uppercase tracking-wider" for="email">Institutional Email</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-md text-text-muted group-focus-within:text-primary transition-colors">mail</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-lg text-body-lg rounded-lg py-md pl-3xl pr-md focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface transition-all placeholder:text-text-muted" id="email" placeholder="name@institution.edu" required="" type="email"/>
+</div>
+</div>
+<!-- Password Input -->
+<div class="flex flex-col gap-xs relative group">
+<div class="flex justify-between items-center w-full">
+<label class="font-label-caps text-label-caps text-text-secondary uppercase tracking-wider" for="password">Password</label>
+<a class="font-body-sm text-body-sm text-primary hover:text-primary-hover hover:underline transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs" href="#">Forgot password?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-md text-text-muted group-focus-within:text-primary transition-colors">lock</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-lg text-body-lg rounded-lg py-md pl-3xl pr-md focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface transition-all placeholder:text-text-muted" id="password" placeholder="••••••••" required="" type="password"/>
+<button class="absolute right-md text-text-muted hover:text-on-surface focus:outline-none focus:text-primary transition-colors p-xs rounded-full" id="togglePassword" type="button">
+<span class="material-symbols-outlined" id="toggleIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Keep me logged in -->
+<div class="flex items-center gap-md py-sm">
+<label class="flex items-center gap-md cursor-pointer group">
+<div class="relative flex items-center justify-center w-5 h-5">
+<input class="peer appearance-none w-5 h-5 bg-surface-container-low rounded focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface checked:bg-primary transition-all cursor-pointer" id="rememberMe" type="checkbox"/>
+<span class="material-symbols-outlined absolute text-on-primary text-sm opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Keep me logged in</span>
+</label>
+</div>
+<!-- Primary CTA -->
+<button class="w-full bg-primary hover:bg-primary-hover text-on-primary font-headline-xs text-headline-xs rounded-lg py-md px-lg transition-all shadow-sm hover:shadow-md active:scale-[0.98] flex items-center justify-center gap-sm relative overflow-hidden group" id="submitBtn" type="submit">
+<span class="relative z-10">Sign In</span>
+<span class="material-symbols-outlined relative z-10 text-[20px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<!-- Loading Spinner (Hidden by default) -->
+<div class="absolute inset-0 bg-primary hidden items-center justify-center z-20" id="loadingSpinner">
+<svg class="animate-spin h-5 w-5 text-white" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+</div>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative flex items-center py-sm w-full">
+<div class="flex-grow bg-surface-container-highest h-px"></div>
+<span class="flex-shrink-0 font-label-caps text-label-caps text-text-muted uppercase px-md">Or</span>
+<div class="flex-grow bg-surface-container-highest h-px"></div>
+</div>
+<!-- Secondary SSO -->
+<button class="w-full bg-surface hover:bg-surface-alt text-primary font-headline-xs text-headline-xs rounded-lg py-md px-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-md border border-surface-container-highest" type="button">
+<span class="material-symbols-outlined text-primary">account_balance</span>
+            Sign in with Institutional SSO
+        </button>
+<!-- Footer Links -->
+<div class="flex justify-center gap-lg mt-sm">
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors focus:outline-none focus:underline rounded-sm px-xs" href="#">Help</a>
+<span class="text-surface-container-highest">•</span>
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors focus:outline-none focus:underline rounded-sm px-xs" href="#">Privacy</a>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const loginForm = document.getElementById('loginForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+
+        // Toggle Password Visibility
+        toggleBtn.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            toggleIcon.textContent = type === 'password' ? 'visibility' : 'visibility_off';
+        });
+
+        // Form Submit Simulation
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            loadingSpinner.classList.remove('hidden');
+            loadingSpinner.classList.add('flex');
+            submitBtn.classList.add('pointer-events-none');
+            
+            // Simulate API call
+            setTimeout(() => {
+                loadingSpinner.classList.remove('flex');
+                loadingSpinner.classList.add('hidden');
+                submitBtn.classList.remove('pointer-events-none');
+                
+                // Optional: Trigger a success toast or navigation here
+                // For demonstration, we'll just reset
+                submitBtn.innerHTML = '<span class="relative z-10">Success</span><span class="material-symbols-outlined relative z-10 text-[20px]">check</span>';
+                submitBtn.classList.remove('bg-primary', 'hover:bg-primary-hover');
+                submitBtn.classList.add('bg-success-text', 'hover:bg-success-text');
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<span class="relative z-10">Sign In</span><span class="material-symbols-outlined relative z-10 text-[20px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span>';
+                     submitBtn.classList.add('bg-primary', 'hover:bg-primary-hover');
+                    submitBtn.classList.remove('bg-success-text', 'hover:bg-success-text');
+                }, 2000);
+
+            }, 1500);
+        });
+    });
+</script></main></body></html>

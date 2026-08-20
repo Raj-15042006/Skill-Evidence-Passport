@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "usr-student-1",
+      "name": "Alex Rivera",
+      "email": "alex.rivera@university.edu",
+      "password_hash": "$2a$10$qc6x4e9vQPlAEmCtgHMwBOcUt.XEYu/sS2/fBoUXjoiQ5fM1LlZmW",
+      "role": "student",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "department": "Computer Science & Engineering",
+      "graduation_year": 2025,
+      "bio": "Passionate full-stack developer focusing on scalable distributed systems.",
+      "institution": "Tech Institute of Science"
+    },
+    {
+      "id": "usr-verifier-1",
+      "name": "Dr. Sarah Jenkins",
+      "email": "s.jenkins@university.edu",
+      "password_hash": "$2a$10$qc6x4e9vQPlAEmCtgHMwBOcUt.XEYu/sS2/fBoUXjoiQ5fM1LlZmW",
+      "role": "verifier",
+      "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "department": "Computer Science & Engineering",
+      "institution": "Tech Institute of Science"
+    },
+    {
+      "id": "usr-recruiter-1",
+      "name": "Elena Rostova",
+      "email": "elena@techcorp-talent.com",
+      "password_hash": "$2a$10$qc6x4e9vQPlAEmCtgHMwBOcUt.XEYu/sS2/fBoUXjoiQ5fM1LlZmW",
+      "role": "recruiter",
+      "avatar_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "department": "Talent Acquisition",
+      "institution": "Global Tech Solutions"
+    },
+    {
+      "id": "usr-admin-1",
+      "name": "Lead Systems Admin",
+      "email": "admin@passport.edu",
+      "password_hash": "$2a$10$qc6x4e9vQPlAEmCtgHMwBOcUt.XEYu/sS2/fBoUXjoiQ5fM1LlZmW",
+      "role": "admin",
+      "avatar_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+      "department": "Governance Office",
+      "institution": "Passport Governance Office"
+    }
+  ],
+  "skills": [],
+  "evidences": [],
+  "audit_logs": []
+}

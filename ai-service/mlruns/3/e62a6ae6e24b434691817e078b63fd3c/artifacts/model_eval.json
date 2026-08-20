@@ -1,0 +1,101 @@
+{
+  "model_version": "v2.1.0-ml-regularized",
+  "algorithm": "Regularized TF-IDF + Calibrated Gradient Boosting Pipeline",
+  "dataset_size": 1200,
+  "training_samples": 960,
+  "test_samples": 240,
+  "overfitting_status": "PASS (Gap < 4.0%)",
+  "metrics": {
+    "train_accuracy": 0.9948,
+    "accuracy": 0.9958,
+    "train_test_gap_pct": -0.1,
+    "roc_auc_macro": 1.0,
+    "f1_class_needs_info": 0.9915,
+    "f1_class_rejected": 0.9942,
+    "f1_class_approved": 1.0,
+    "f1_macro": 0.9952,
+    "precision_macro": 0.9961,
+    "recall_macro": 0.9944,
+    "cv_accuracy_mean": 0.9948,
+    "cv_f1_macro_mean": 0.994
+  },
+  "params": {
+    "n_estimators": 100,
+    "max_depth": 3,
+    "min_samples_leaf": 6,
+    "min_samples_split": 12,
+    "subsample": 0.75,
+    "max_features": 0.7,
+    "learning_rate": 0.06,
+    "test_size": 0.2,
+    "calibration": "sigmoid",
+    "vectorizer": "TF-IDF (80 max features, min_df=3, sublinear_tf)",
+    "classifier": "RegularizedCalibratedGradientBoostingClassifier"
+  },
+  "confusion_matrix": {
+    "labels": [
+      "needs-info",
+      "rejected",
+      "approved"
+    ],
+    "matrix": [
+      [
+        58,
+        1,
+        0
+      ],
+      [
+        0,
+        85,
+        0
+      ],
+      [
+        0,
+        0,
+        96
+      ]
+    ]
+  },
+  "feature_rankings": [
+    {
+      "feature": "kw_ratio",
+      "importance": 0.26
+    },
+    {
+      "feature": "kw_count",
+      "importance": 0.22
+    },
+    {
+      "feature": "word_count",
+      "importance": 0.19
+    },
+    {
+      "feature": "sim_score",
+      "importance": 0.13
+    },
+    {
+      "feature": "verb_count",
+      "importance": 0.09
+    },
+    {
+      "feature": "has_repo_url",
+      "importance": 0.05
+    },
+    {
+      "feature": "has_metrics",
+      "importance": 0.04
+    },
+    {
+      "feature": "type_token_ratio",
+      "importance": 0.02
+    }
+  ],
+  "comparison_vs_baseline": {
+    "baseline_accuracy": 0.74,
+    "ml_model_accuracy": 0.9958,
+    "baseline_f1_macro": 0.71,
+    "ml_model_f1_macro": 0.9952,
+    "accuracy_improvement_pct": 25.58,
+    "f1_improvement_pct": 28.52
+  }
+}
